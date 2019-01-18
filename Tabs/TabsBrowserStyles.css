@@ -2,7 +2,7 @@
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: ;
+  border:;
   background-color: #6D6D6D;
 }
 
@@ -13,7 +13,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 10px 40px;
+  padding: 9px 20px;
   transition: 0.3s;
 }
 
@@ -30,8 +30,8 @@
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
-  border:;
+  padding: 3px 6px;
+  border: 1px solid #ccc;
   border-top: none;
 }
 
