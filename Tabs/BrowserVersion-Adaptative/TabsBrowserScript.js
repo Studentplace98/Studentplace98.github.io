@@ -25,6 +25,8 @@ function clicks(url){
 var web,bar;
   web=document.getElementById("source");
   web.setAttribute("href",url);
+  web=document.getElementById("sourcem");
+  web.setAttribute("href",url);
   //web.innerText=url; //inserta el texto del enlace
   bar=document.getElementById("search-bar");
   bar.setAttribute("value",url);
