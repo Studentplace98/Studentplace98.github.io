@@ -30,6 +30,7 @@ display:none;
 #navbarBVA {
   padding: 1.4em;
   background: #6D6D6D;
+ height:1.69em;
 }
 
 #menuButtonBVA{
@@ -75,26 +76,26 @@ margin-right:0.5em;
 }
 /* Create three unequal columns that floats next to each other */
 .columnBVA {
-  margin-top:-0.9em;
+  margin-top:-1.2em;
     float: left;
 }
 
 .leftBVA {
-  /*background-color:yellow;*/
+ /* background-color:yellow;*/
   width: 10%;
-  margin-top:-1.1em;
-  margin-left:-0.5em;
+  margin-top:-1.3em;
+  margin-left:-0.8em;
 
 }
 
 .rightBVA {
  /* background-color:orange;*/
- margin-top:-0.9em;
+ margin-top:-1.2em;
  width: 5%;
 }
 
 .middleBVA {
-  /*background-color:purple;*/
+ /*  background-color:purple;*/
   width: 85%;
 
 }
@@ -365,6 +366,7 @@ width:70%;
 }
   .custom-selectBVA {
   display:block;
+margin-top:2em;
 }
 
 .GoButtonBVA {
@@ -392,6 +394,8 @@ width:70%;
   position:relative;
   z-index:99;
   }
+
+
 }
 
 @media (max-width:409px){
@@ -425,10 +429,11 @@ width:70%;
  width: 0%;
   
 }
-    .custom-selectBVA {
+  .custom-selectBVA {
   display:block;
-  margin-top:-2.8em;
+margin-top:-0.69em;
 }
+
 
   .select-itemsBVA {
   width:83%;
