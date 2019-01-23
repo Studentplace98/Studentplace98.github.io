@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content='width=device-width, initial-scale=1' name='viewport'/>
+		<link rel="stylesheet" href="TabsBrowserStyles.css" type="text/css"/>
+		<title>Pruebas-Browser</title>
+	</head>
+	<body>
+  <div class="custom-selectz" style="width:100%;" onclick="openCity(event,'Tab1')" id="defaultOpen">
+  <select>
+    <option value="0"><strong>Selecciona la Pagina a visualizar:</strong></option>
+    <option value="1" >aprende-web</option>
+    <option value="2">colores</option>
+    <option value="3">google</option>
+  </select>
+</div>
+		<!-- Tab content -->
+		<div id="site">
+		<div id="Tab1" class="tabcontent">
+  			<object type="text/html" data="https://aprende-web.net/html/html8_1.php" width="100%" height="500 px" ></object>
+		
+			
+		</div>
+
+		<div id="Tab2" class="tabcontent">
+			<object type="text/html" data="https://htmlcolorcodes.com/es/" width="100%" height="500 px" ></object>
+		</div>
+
+		<div id="Tab3" class="tabcontent">
+  				<object type="text/html" data="https://www.bing.com" width="100%" height="500 px" ></object>
+		</div>
+		</div>
+		<script type="text/javascript" src="TabsBrowserScript.js"></script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="TabsBrowserStyles.css" type="text/css"/>
+		<title>Pruebas-Browser</title>
+	</head>
+	<body style="background-color:#0c343d">
+		<div class="tabDV">
+  			<button class="tablinksDV" onclick="openCity(event, 'Tab1')" id="defaultOpen">aprende-web</button>
+  			<button class="tablinksDV" onclick="openCity(event, 'Tab1')">aprende-web</button>
+  			<button class="tablinksDV" onclick="openCity(event, 'Tab2')">colores</button>
+  			<button class="tablinksDV" onclick="openCity(event, 'Tab3')">w3schools</button>
+		</div>
+		<!-- Tab content -->
+		<div style="background-color:white">
+		<div id="Tab1" class="tabcontentDV">
+  			<object type="text/html" data="https://aprende-web.net/html/html8_1.php" width="100%" height="500 px" ></object>
+		
+			
+		</div>
+
+		<div id="Tab2" class="tabcontentDV">
+			<object type="text/html" data="https://htmlcolorcodes.com/es/" width="100%" height="500 px" ></object>
+		</div>
+
+		<div id="Tab3" class="tabcontentDV">
+  				<object type="text/html" data="https://www.w3schools.com/howto/howto_js_tabs.asp" width="100%" height="500 px" ></object>
+		</div>
+		</div>
+		
+		<script type="text/javascript" src="TabsBrowserScript.js"></script>
+	</body>
+</html>
