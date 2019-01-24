@@ -78,21 +78,21 @@ margin-right:0.5em;
 }
 /* Create three unequal columns that floats next to each other */
 .columnBVA {
-  margin-top:-1em;
+  margin-top:-1.1em;
     float: left;
 }
 
 .leftBVA {
   /*background-color:yellow;*/
   width: 10%;
-  margin-top:-1.1em;
+  margin-top:-1.2em;
   margin-left:-0.5em;
 
 }
 
 .rightBVA {
  /* background-color:orange;*/
- margin-top:-0.9em;
+ margin-top:-1.1em;
  width: 5%;
 }
 
@@ -368,7 +368,7 @@ width:70%;
 }
   .custom-selectBVA {
   display:block;
-   margin-top:1.8em;
+   margin-top:1.9em;
 }
 
 .GoButtonBVA {
