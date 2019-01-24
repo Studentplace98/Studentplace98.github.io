@@ -1,15 +1,14 @@
-function openCity(evt, tab) {
+function openTL(evt, tab) {
   // Declare all variables
   var i, tabcontent, tablinks;
   // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent = document.getElementsByClassName("Ltabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
   // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  accesslink = document.getElementsByClassName("accesslink");
+  tablinks = document.getElementsByClassName("Ltablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
@@ -20,24 +19,26 @@ function openCity(evt, tab) {
 	
 }
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
 /*-------Changes for the movil version----------------*/
-var x, i, j, selElmnt, a, b, c,h;
+var x, i, j, selElmnt, a, b, c,h,inic=0,closeList;
 /* Look for any elements with the class "custom-select": */
-x = document.getElementsByClassName("custom-select");
+x = document.getElementsByClassName("Lcustom-select");
 for (i = 0; i < x.length; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
+  console.log(selElmnt);
   /* For each element, create a new DIV that will act as the selected item: */
   a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
-  a.setAttribute("id", "border-coners");
+  a.setAttribute("class", "Lselect-selected Lborder-coners");
+  if (inic==0){
+            a.setAttribute("id", "defaultOpenTL");
+            a.setAttribute("onclick", "openTL(event, 'LTab1')");
+    inic=inic+1;
+   }
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   x[i].appendChild(a);
   /* For each element, create a new DIV that will contain the option list: */
   b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
+  b.setAttribute("class", "Lselect-items Lselect-hide");
   for (j = 1; j < selElmnt.length; j++) {
     /* For each option in the original select element,
     create a new DIV that will act as an option item: */
@@ -53,12 +54,13 @@ for (i = 0; i < x.length; i++) {
           if (s.options[i].innerHTML == this.innerHTML) {
             s.selectedIndex = i;
             h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
+            y = this.parentNode.getElementsByClassName("Lsame-as-selected");
             for (k = 0; k < y.length; k++) {
               y[k].removeAttribute("class");
             }
-            this.setAttribute("class", "same-as-selected");
-            this.setAttribute("onclick", "openCity(event, 'Tab"+i+"')");
+            this.setAttribute("class", "Lsame-as-selected");
+            this.setAttribute("onclick", "openTL(event, 'LTab"+i+"')");
+            
             break;
           }
         }
@@ -73,32 +75,50 @@ for (i = 0; i < x.length; i++) {
     /* When the select box is clicked, close any other select boxes,
     and open/close the current select box: */
     e.stopPropagation();
-    closeAllSelect(this);
-    this.nextSibling.classList.toggle("select-hide");
-    this.classList.toggle("select-arrow-active");
+    closeList=this;
+    closeAllSelectTL(closeList);
+    this.nextSibling.classList.toggle("Lselect-hide");
+    this.classList.toggle("Lselect-arrow-active");
   });
 }
 
-function closeAllSelect(elmnt) {
+function closeAllSelectTL(elmnt) {
   /* A function that will close all select boxes in the document,
   except the current select box: */
   var x, y, i, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
+  x = document.getElementsByClassName("Lselect-items");
+  y = document.getElementsByClassName("Lselect-selected");
   for (i = 0; i < y.length; i++) {
     if (elmnt == y[i]) {
       arrNo.push(i)
     } else {
-      y[i].classList.remove("select-arrow-active");
+      y[i].classList.remove("Lselect-arrow-active");
     }
   }
   for (i = 0; i < x.length; i++) {
     if (arrNo.indexOf(i)) {
-      x[i].classList.add("select-hide");
+      x[i].classList.add("Lselect-hide");
     }
   }
 }
 
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
-document.addEventListener("click", closeAllSelect);
+document.addEventListener("click", closeAllSelectTL);
+window.addEventListener('load', LoadDefaultPage, false);
+function LoadDefaultPage() {
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpenTL").click();
+closeAllSelectTL(closeList);
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("Lselect-items");
+  y = document.getElementsByClassName("Lselect-selected");
+  for (i = 0; i < y.length; i++) {
+      y[i].classList.remove("Lselect-arrow-active");
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("Lselect-hide");
+    }
+  }
+}

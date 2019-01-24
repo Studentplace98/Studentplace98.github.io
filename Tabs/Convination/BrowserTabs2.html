@@ -1,0 +1,170 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content='width=device-width, initial-scale=1' name='viewport'/>
+		<link rel="stylesheet" href="../BrowserVersion-Adaptative/TabsBrowserStyles.css" type="text/css"/>
+		<link rel="stylesheet" href="../DesktopVersion/TabsBrowserStyles.css" type="text/css"/>
+		<link rel="stylesheet" href="../List/TabsBrowserStyles.css" type="text/css"/>
+		<link rel="stylesheet" href="../Tabs-List-Adaptative/TabsBrowserStyles.css" type="text/css"/>
+		<title>Pruebas-Browser</title>
+	</head>
+	<body>
+<!--+++++++++++++++++++++++++++++++++++++++++++++Version navegador+++++++++++++++++++++++++++++++++-->
+<div>
+		<div class="tabBVA">
+  			<button class="tablinksBVA" onclick="openBVA(event, 'BTab1','https://aprende-web.net/html/html8_1.php')" id="defaultOpenBVA">aprende-web</button>
+  			<button class="tablinksBVA" onclick="openBVA(event, 'BTab2','https://htmlcolorcodes.com/es/')">colores</button>
+  			<button class="tablinksBVA" onclick="openBVA(event, 'BTab3','https://www.bing.com')">Bing</button>
+			<button class="tablinksBVA" onclick="openBVA(event, 'BTab4','https://htmlcolorcodes.com/es/')">Bing</button>
+			 <span style="float:right">
+				<span class="dotBVA" style="background:#ED594A;"></span>
+      			<span class="dotBVA" style="background:#FDD800;"></span>
+      			<span class="dotBVA" style="background:#5AC05A;"></span>
+			</span>
+		</div>
+		
+ <div id="navbarBVA">
+<div class="columnBVA leftBVA">
+	<b id="arrowsBVA">&lsaquo;</b><b id="arrowsBVA">&rsaquo;</b>
+</div>
+<div class="columnBVA middleBVA">
+	<div id="navcontentBVA">
+<input id="search-barBVA" type="text" value="http://www.w3schools.com">
+  <a id="sourceBVA" class="GoButtonBVA" target="_black" href="">Visitar sitio</a>
+  <a id="sourcemBVA" class="GoButtonBVA" target="_black" href="">Go</a>
+</div>
+		  <div class="custom-selectBVA">
+  <select>
+    <option value="0"><strong></strong>&nbsp;</option>
+    <option value="https://aprende-web.net/html/html8_1.php" >aprende-web</option>
+    <option value="https://htmlcolorcodes.com/es/">colores</option>
+    <option value="https://www.bing.com">Bing</option>
+	<option value="https://htmlcolorcodes.com/es/">colores</option>
+  </select>
+</div>
+
+</div>
+<div class="columnBVA rightBVA">
+	<div id="menuButtonBVA">
+        <span class="barBVA"></span>
+        <span class="barBVA"></span>
+        <span class="barBVA"></span>
+     </div>
+</div>
+	 
+</div>
+		<!-- Tab content -->
+		<div id="siteBVA">
+		<div id="BTab1" class="tabcontentBVA">
+  			<object type="text/html" data="https://aprende-web.net/html/html8_1.php" width="100%" height="500 px" ></object>
+		
+			
+		</div>
+
+		<div id="BTab2" class="tabcontentBVA">
+			<object type="text/html" data="https://htmlcolorcodes.com/es/" width="100%" height="500 px" ></object>
+		</div>
+
+		<div id="BTab3" class="tabcontentBVA">
+  				<object type="text/html" data="https://www.bing.com" width="100%" height="500 px" ></object>
+		</div>
+		<div id="BTab4" class="tabcontentBVA">
+  				<object type="text/html" data="https://htmlcolorcodes.com/es/" width="100%" height="500 px" ></object>
+		</div>
+		</div>
+</div>
+		
+<!--*********************Version tabulaciondesktopversion***************************************-->	
+<br>
+<div>
+<div class="tabDV">
+  			<button class="tablinksDV" onclick="opentabDV(event, 'tTab1')" id="defaultOpen">aprende-web</button>
+  			<button class="tablinksDV" onclick="opentabDV(event, 'tTab2')">aprende-web</button>
+  			<button class="tablinksDV" onclick="opentabDV(event, 'tTab3')">colores</button>
+  			<button class="tablinksDV" onclick="opentabDV(event, 'tTab2')">w3schools</button>
+		</div>
+		<!-- Tab content -->
+		<div style="background-color:white">
+		<div id="tTab1" class="tabcontentDV">
+  			<object type="text/html" data="https://uniwebsidad.com/libros/fundamentos-jquery/capitulo-4/evitar-conflictos-con-otras-bibliotecas-javascript?from=librosweb" width="100%" height="500 px" ></object>
+		
+			
+		</div>
+
+		<div id="tTab2" class="tabcontentDV">
+			<object type="text/html" data="https://studentplace98.blogspot.com/2019/01/pruebasgeneral.html?m=1" width="100%" height="500 px" ></object>
+		</div>
+
+		<div id="tTab3" class="tabcontentDV">
+  				<object type="text/html" data="https://animeflv.net/ver/49661/one-piece-tv-846" width="100%" height="500 px" ></object>
+		</div>
+		</div>
+</div>
+<!--*********************Version tabulacionList***************************************-->	
+<br>
+<div>
+<div class="Lcustom-select" style="width:100%;" >
+  <select>
+    <option value="0"><strong>Selecciona la Pagina a visualizar:</strong></option>
+    <option value="1" >aprende-web</option>
+    <option value="2">colores</option>
+    <option value="3">google</option>
+  </select>
+</div>
+		<!-- Tab content -->
+		<div id="Lsite">
+		<div id="LTab1" class="Ltabcontent">
+  			<object type="text/html" data="https://aprende-web.net/html/html8_1.php" width="100%" height="500 px" ></object>
+		
+			
+		</div>
+
+		<div id="LTab2" class="Ltabcontent">
+			<object type="text/html" data="https://htmlcolorcodes.com/es/" width="100%" height="500 px" ></object>
+		</div>
+
+		<div id="LTab3" class="Ltabcontent">
+  				<object type="text/html" data="https://www.bing.com" width="100%" height="500 px" ></object>
+		</div>
+		</div>
+</div>
+<!--*********************Version tabulacionLista***************************************-->	
+<br>
+		<div>
+			<div class="tabTLA">
+  			<button class="tablinksTLA" onclick="openTLA(event, 'TLATab1','https://aprende-web.net/html/html8_1.php')" id="defaultOpenTLA">aprende-web</button>
+  			<button class="tablinksTLA" onclick="openTLA(event, 'TLATab2','https://htmlcolorcodes.com/es/')">colores</button>
+  			<button class="tablinksTLA" onclick="openTLA(event, 'TLATab3','https://htmlcolorcodes.com/es/')">google</button>
+		</div>
+  <div class="custom-selectTLA" style="width:100%;">
+  <select>
+    <option value="0"><strong>Selecciona la Pagina a visualizar:</strong></option>
+    <option value="1" >aprende-web</option>
+    <option value="2">colores</option>
+    <option value="3">google</option>
+  </select>
+</div>
+		<!-- Tab content -->
+		<div id="siteTLA">
+		<div id="TLATab1" class="tabcontentTLA">
+  			<object type="text/html" data="https://aprende-web.net/html/html8_1.php" width="100%" height="500 px" ></object>
+		
+			
+		</div>
+
+		<div id="TLATab2" class="tabcontentTLA">
+			<object type="text/html" data="https://htmlcolorcodes.com/es/" width="100%" height="500 px" ></object>
+		</div>
+
+		<div id="TLATab3" class="tabcontentTLA">
+  				<object type="text/html" data="https://www.bing.com" width="100%" height="500 px" ></object>
+		</div>
+		</div>
+		</div>
+<script type="text/javascript" src="../BrowserVersion-Adaptative/TabsBrowserScript.js"></script>
+<script type="text/javascript" src="../DesktopVersion/TabsBrowserScript.js"></script>
+<script type="text/javascript" src="../List/TabsBrowserScript.js"></script>
+<script type="text/javascript" src="../Tabs-List-Adaptative/TabsBrowserScript.js"></script>
+	</body>
+</html>

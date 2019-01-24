@@ -7,11 +7,13 @@
 		<title>Pruebas-Browser</title>
 	</head>
 	<body>
+		<!--+++++++++++++++++++++++++++++++++++++++++++++Version navegador+++++++++++++++++++++++++++++++++-->
+<div>
 		<div class="tabBVA">
-  			<button class="tablinksBVA" onclick="openCity(event, 'Tab1','https://aprende-web.net/html/html8_1.php')" id="defaultOpen">aprende-web</button>
-  			<button class="tablinksBVA" onclick="openCity(event, 'Tab2','https://htmlcolorcodes.com/es/')">colores</button>
-  			<button class="tablinksBVA" onclick="openCity(event, 'Tab3','https://www.bing.com')">Bing</button>
-			<button class="tablinksBVA" onclick="openCity(event, 'Tab4','https://htmlcolorcodes.com/es/')">Bing</button>
+  			<button class="tablinksBVA" onclick="openBVA(event, 'BTab1','https://aprende-web.net/html/html8_1.php')" id="defaultOpenBVA">aprende-web</button>
+  			<button class="tablinksBVA" onclick="openBVA(event, 'BTab2','https://htmlcolorcodes.com/es/')">colores</button>
+  			<button class="tablinksBVA" onclick="openBVA(event, 'BTab3','https://www.bing.com')">Bing</button>
+			<button class="tablinksBVA" onclick="openBVA(event, 'BTab4','https://htmlcolorcodes.com/es/')">Bing</button>
 			 <span style="float:right">
 				<span class="dotBVA" style="background:#ED594A;"></span>
       			<span class="dotBVA" style="background:#FDD800;"></span>
@@ -51,23 +53,24 @@
 </div>
 		<!-- Tab content -->
 		<div id="siteBVA">
-		<div id="Tab1" class="tabcontentBVA">
+		<div id="BTab1" class="tabcontentBVA">
   			<object type="text/html" data="https://aprende-web.net/html/html8_1.php" width="100%" height="500 px" ></object>
 		
 			
 		</div>
 
-		<div id="Tab2" class="tabcontentBVA">
+		<div id="BTab2" class="tabcontentBVA">
 			<object type="text/html" data="https://htmlcolorcodes.com/es/" width="100%" height="500 px" ></object>
 		</div>
 
-		<div id="Tab3" class="tabcontentBVA">
+		<div id="BTab3" class="tabcontentBVA">
   				<object type="text/html" data="https://www.bing.com" width="100%" height="500 px" ></object>
 		</div>
-		<div id="Tab4" class="tabcontentBVA">
-  				<object type="text/html" data="https://www.bing.com" width="100%" height="500 px" ></object>
+		<div id="BTab4" class="tabcontentBVA">
+  				<object type="text/html" data="https://htmlcolorcodes.com/es/" width="100%" height="500 px" ></object>
 		</div>
 		</div>
+</div>
 		<script type="text/javascript" src="TabsBrowserScript.js"></script>
 	</body>
 </html>

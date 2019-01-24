@@ -1,4 +1,4 @@
-function openCity(evt, tab,url) {
+function openTLA(evt, tab,url) {
   // Declare all variables
   var i, tabcontent, tablinks;
   // Get all elements with class="tabcontent" and hide them
@@ -19,18 +19,8 @@ function openCity(evt, tab,url) {
 	
 }
 
-function clicks(url){
-var web;
-  web=document.getElementById("web-linkTLA");
-  
-  var a = document.createElement("a");
-  a.setAttribute("href", "www.google.com.mx");
-  a.innerHTML = selElmnt.options.innerHTML;
-  web.appendChild(a);
-    
-}
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpenTLA").click();
 
 /*-------Changes for the movil version----------------*/
 var x, i, j, selElmnt, a, b, c,h;
@@ -67,7 +57,7 @@ for (i = 0; i < x.length; i++) {
               y[k].removeAttribute("class");
             }
             this.setAttribute("class", "same-as-selectedTLA");
-            this.setAttribute("onclick", "openCity(event, 'Tab"+i+"')");
+            this.setAttribute("onclick", "openTLA(event, 'TLATab"+i+"')");
             break;
           }
         }

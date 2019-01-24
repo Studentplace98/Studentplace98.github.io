@@ -7,10 +7,13 @@
 		<title>Pruebas-Browser</title>
 	</head>
 	<body>
-		<div class="tabTLA">
-  			<button class="tablinksTLA" onclick="openCity(event, 'Tab1','https://aprende-web.net/html/html8_1.php')" id="defaultOpen">aprende-web</button>
-  			<button class="tablinksTLA" onclick="openCity(event, 'Tab2','https://htmlcolorcodes.com/es/')">colores</button>
-  			<button class="tablinksTLA" onclick="openCity(event, 'Tab3','https://htmlcolorcodes.com/es/')">google</button>
+		<!--*********************Version tabulacionLista***************************************-->	
+<br>
+		<div>
+			<div class="tabTLA">
+  			<button class="tablinksTLA" onclick="openTLA(event, 'TLATab1','https://aprende-web.net/html/html8_1.php')" id="defaultOpenTLA">aprende-web</button>
+  			<button class="tablinksTLA" onclick="openTLA(event, 'TLATab2','https://htmlcolorcodes.com/es/')">colores</button>
+  			<button class="tablinksTLA" onclick="openTLA(event, 'TLATab3','https://htmlcolorcodes.com/es/')">google</button>
 		</div>
   <div class="custom-selectTLA" style="width:100%;">
   <select>
@@ -22,18 +25,19 @@
 </div>
 		<!-- Tab content -->
 		<div id="siteTLA">
-		<div id="Tab1" class="tabcontentTLA">
+		<div id="TLATab1" class="tabcontentTLA">
   			<object type="text/html" data="https://aprende-web.net/html/html8_1.php" width="100%" height="500 px" ></object>
 		
 			
 		</div>
 
-		<div id="Tab2" class="tabcontentTLA">
+		<div id="TLATab2" class="tabcontentTLA">
 			<object type="text/html" data="https://htmlcolorcodes.com/es/" width="100%" height="500 px" ></object>
 		</div>
 
-		<div id="Tab3" class="tabcontentTLA">
+		<div id="TLATab3" class="tabcontentTLA">
   				<object type="text/html" data="https://www.bing.com" width="100%" height="500 px" ></object>
+		</div>
 		</div>
 		</div>
 		<script type="text/javascript" src="TabsBrowserScript.js"></script>

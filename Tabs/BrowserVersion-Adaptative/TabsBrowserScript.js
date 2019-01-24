@@ -1,4 +1,4 @@
-function openCity(evt, tab,url) {
+function openBVA(evt, tab,url) {
   // Declare all variables
   var i, tabcontent, tablinks;
   // Get all elements with class="tabcontent" and hide them
@@ -16,11 +16,11 @@ function openCity(evt, tab,url) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tab).style.display = "block";
   evt.currentTarget.className += " active";
-  clicks(url);
+  clicksBVA(url);
 	
 }
 
-function clicks(url){
+function clicksBVA(url){
 var web,bar;
   web=document.getElementById("sourceBVA");
   web.setAttribute("href",url);
@@ -31,7 +31,7 @@ var web,bar;
   bar.setAttribute("value",url);
 }
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpenBVA").click();
 
 
 /*
@@ -47,13 +47,13 @@ document.getElementById("defaultOpen").click();
 var x, i, j, selElmnt, a, b, c,h,values=[],z;
 /* Look for any elements with the class "custom-select": */
 x = document.getElementsByClassName("custom-selectBVA");
-function url_value(){
+function url_valueBVA(){
     selElmnt = x[0].getElementsByTagName("select")[0];
     for(i=0;i<selElmnt.length;i++){
     values.push(selElmnt.options[i].value);
     }
 }
-url_value();
+url_valueBVA();
 for (i = 0; i < x.length; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
   /* For each element, create a new DIV that will act as the selected item: */
@@ -86,7 +86,7 @@ for (i = 0; i < x.length; i++) {
               y[k].removeAttribute("class");
             }
             this.setAttribute("class", "same-as-selectedBVA");
-            this.setAttribute("onclick", "openCity(event, 'Tab"+i+"','"+values[i]+"')");
+            this.setAttribute("onclick", "openBVA(event, 'BTab"+i+"','"+values[i]+"')");
             break;
           }
         }
@@ -100,13 +100,13 @@ for (i = 0; i < x.length; i++) {
     /* When the select box is clicked, close any other select boxes,
     and open/close the current select box: */
     e.stopPropagation();
-    closeAllSelect(this);
+    closeAllSelectBVA(this);
     this.nextSibling.classList.toggle("select-hideBVA");
     this.classList.toggle("select-arrow-activeBVA");
   });
 }
 
-function closeAllSelect(elmnt) {
+function closeAllSelectBVA(elmnt) {
   /* A function that will close all select boxes in the document,
   except the current select box: */
   var x, y, i, arrNo = [];
@@ -128,4 +128,4 @@ function closeAllSelect(elmnt) {
 
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
-document.addEventListener("click", closeAllSelect);
+document.addEventListener("click", closeAllSelectBVA);
