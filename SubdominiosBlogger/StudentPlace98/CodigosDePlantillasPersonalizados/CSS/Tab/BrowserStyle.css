@@ -78,7 +78,7 @@ margin-right:0.5em;
 }
 /* Create three unequal columns that floats next to each other */
 .columnBVA {
-  margin-top:-0.9em;
+  margin-top:-1em;
     float: left;
 }
 
