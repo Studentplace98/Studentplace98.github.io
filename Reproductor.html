@@ -1,0 +1,19 @@
+<!--ñy ugj mjwcj-->
+<!Doctype html>
+<html>
+	<head>
+		<link rel="StyleSheet" href="Rep-styles.css" type="text/css" />
+		<title>Reproductor</title>
+	</head>
+	
+	<body>
+		<video id="reproductor" muted autoplay src="file:///home/isaias/M%C3%BAsica/%231%20Olly%20Murs.mp3" controls></video>
+		<button onclick="playPause()" >play</button>
+		<button onclick="changeSong()">song</button>
+  <!-- Campo de selección de archivo -->
+ <input type="file" id="files" name="files[]" multiple />
+		<button onclick="cargar()">Cargar</button>
+		<script type="text/javascript" src="RepScripts.js"></script>
+		
+	</body>
+</html>
